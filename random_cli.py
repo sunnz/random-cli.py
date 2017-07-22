@@ -2,6 +2,17 @@
 
 import random
 import string
+import click
+
+
+@click.command()
+@click.argument('length', required=False)
+def random_cli(length):
+    try:
+        result = random_string(int(length))
+    except:
+        result = random_string()
+    click.echo(result)
 
 
 def random_string(len=64):
@@ -16,4 +27,4 @@ def random_string(len=64):
 
 
 if __name__ == '__main__':
-    print(random_string())
+    random_cli()
