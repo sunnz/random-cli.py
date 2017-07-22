@@ -23,3 +23,7 @@ strings.
 example usage::
 
     ./random_cli.py
+
+to run unit test (via python3 unittest module)::
+
+    python3 -m unittest -v
