@@ -6,13 +6,9 @@ import click
 
 
 @click.command()
-@click.argument('length', required=False)
+@click.argument('length', required=False, default=64)
 def random_cli(length):
-    try:
-        result = random_string(int(length))
-    except:
-        result = random_string()
-    click.echo(result)
+    click.echo(random_string(int(length)))
 
 
 def random_string(len=64):
