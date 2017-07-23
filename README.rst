@@ -23,9 +23,24 @@ strings.
 usage
 =====
 
+system wide installation::
+
+    cd /path/to/repo
+    pip3 install .
+
 example::
 
-    ./random_cli.py
+    random
+
+gives you exactly 64 random alphanumeric characters.
+
+you can specify the number of characters you want by passing a positive integer
+to the command.
+
+for example you can generate 10 characters instead by passing 10 to the
+command::
+
+    random 10
 
 development
 ===========
@@ -33,3 +48,9 @@ development
 to run unit test (via python3 unittest module)::
 
     python3 -m unittest -v
+
+to build command for tesing (e.g. within virtualenv)::
+
+    python3 setup.py develop
+
+after which you can run it by running ``random`` in the terminal in virtualenv.
