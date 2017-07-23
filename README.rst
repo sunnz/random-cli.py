@@ -20,9 +20,15 @@ of the time.
 so here it is, a purpose built cli app just for generating random alphanumeric
 strings.
 
-example usage::
+usage
+=====
+
+example::
 
     ./random_cli.py
+
+development
+===========
 
 to run unit test (via python3 unittest module)::
 
