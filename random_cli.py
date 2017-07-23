@@ -8,15 +8,23 @@ import click
 @click.command()
 @click.argument('length', required=False, default=64)
 def random_cli(length):
-    click.echo(random_string(int(length)))
+    click.echo(random_alphanumeric_string(length))
 
 
-def random_string(len=64):
+def random_alphanumeric_string(len):
+    alphanumeric = string.ascii_letters + string.digits
+    return random_string(len, alphanumeric)
+
+
+def random_hex_string(len):
+    return random_string(len, string.hexdigits)
+
+
+def random_string(len, characters):
     result = ''
     while True:
         if len > 0:
-            alphanumeric = string.ascii_letters + string.digits
-            result += random.choice(alphanumeric)
+            result += random.choice(characters)
             len -= 1
         else:
             return result
