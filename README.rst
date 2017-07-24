@@ -26,7 +26,7 @@ usage
 system wide installation::
 
     cd /path/to/repo
-    pip3 install .
+    sudo python3 -m pip show random-cli
 
 example::
 
