@@ -20,6 +20,12 @@ class RandomCLITestCase(unittest.TestCase):
         result = random_cli.random_hex_string(1)
         self.assertIn(result, string.hexdigits)
 
+    def test_random_printable_string__printable(self):
+        printable = string.ascii_letters + string.digits + string.punctuation
+        result = random_cli.random_printable_string(10)
+        for char in result:
+            self.assertIn(char, printable)
+
 
 if __name__ == '__main__':
     unittest.main()

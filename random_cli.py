@@ -17,7 +17,7 @@ def random_cli(type, length):
     elif 'hex' == type:
         click.echo(random_hex_string(length))
     elif type in ['print', 'printable']:
-        click.echo(random_string(length, string.printable))
+        click.echo(random_printable_string(length))
     elif type in ['lower', 'lowercase']:
         click.echo(random_string(length, string.ascii_lowercase))
     elif type in ['upper', 'uppercase']:
@@ -33,6 +33,11 @@ def random_alphanumeric_string(len):
 
 def random_hex_string(len):
     return random_string(len, string.hexdigits)
+
+
+def random_printable_string(len):
+    printable = string.ascii_letters + string.digits + string.punctuation
+    return random_string(len, printable)
 
 
 def random_string(len, characters):
