@@ -45,12 +45,25 @@ command::
 development
 ===========
 
-to run unit test (via python3 unittest module)::
+setup virtualenv::
 
-    python3 -m unittest -v
+    python3 -m venv venv
+    source venv/bin/activate
+    python -m pip install --upgrade pip
+    python -m pip install -r requirements.txt
 
-to build command for tesing (e.g. within virtualenv)::
+from this point we assume that python refers to python 3 in virtualenv.
 
-    python3 setup.py develop
+to run unit test (via python 3 pytest module)::
+
+    python -m pytest --flake8 -v
+
+install pytest if you haven't installed from requirements.txt from above::
+
+    python -m pip install pytest
+
+to build command for testing (e.g. within virtualenv)::
+
+    python setup.py develop
 
 after which you can run it by running ``random`` in the terminal in virtualenv.
