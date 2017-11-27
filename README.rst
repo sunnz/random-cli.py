@@ -1,5 +1,5 @@
 random-cli
-----------
+=========
 
 a cli app that simply generates a random 64 character alphanumeric string.
 
@@ -21,7 +21,7 @@ so here it is, a purpose built cli app just for generating random alphanumeric
 strings.
 
 usage
-=====
+-----
 
 system wide installation::
 
@@ -43,7 +43,7 @@ command::
     random 10
 
 development
-===========
+-----------
 
 setup virtualenv::
 
