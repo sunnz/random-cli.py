@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import random
+import secrets
 import string
 import click
 
@@ -42,12 +42,10 @@ def random_printable_string(len):
 
 def random_string(len, characters):
     result = ''
-    while True:
-        if len > 0:
-            result += random.choice(characters)
-            len -= 1
-        else:
-            return result
+    while len > 0:
+        result += secrets.choice(characters)
+        len -= 1
+    return result
 
 
 if __name__ == '__main__':

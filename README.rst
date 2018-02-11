@@ -28,6 +28,8 @@ system wide installation::
     cd /path/to/repo
     sudo python3 -m pip install .
 
+note: python 3.6 or higher required.
+
 example::
 
     random
