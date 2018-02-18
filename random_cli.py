@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+a cli app that simply generates a random 64 character alphanumeric string.
+"""
+
 import secrets
 import string
 import click
