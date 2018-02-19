@@ -20,15 +20,25 @@ of the time.
 so here it is, a purpose built cli app just for generating random alphanumeric
 strings.
 
-usage
------
+install
+-------
 
-system wide installation::
+random_cli requires python 3.6 or higher as random_cli uses the new
+secrets module introduced in python 3.6.
+
+you can install random_cli with pip or from source. (or both?)
+
+pip::
+
+    python3 -m pip install random_cli
+
+from source::
 
     cd /path/to/repo
     sudo python3 -m pip install .
 
-note: python 3.6 or higher required.
+usage
+-----
 
 example::
 

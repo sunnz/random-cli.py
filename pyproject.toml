@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "random_cli"
+author = "Sunny Yiu"
+author-email = "sun@yiu.co"
+home-page = "https://github.com/sunnz/random-cli.py"
+requires = [
+    "Click (>=5,<7)",
+]
+requires-python =  "~=3.6"
+description-file = "README.rst"
+classifiers = ["License :: OSI Approved :: ISC License (ISCL)"]
+
+[tool.flit.scripts]
+random = "random_cli:random_cli"

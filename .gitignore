@@ -5,3 +5,4 @@ venv
 build
 dist
 random_cli.egg-info
+.pytest_cache
