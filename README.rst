@@ -30,7 +30,7 @@ you can install random_cli with pip or from source. (or both?)
 
 pip::
 
-    python3 -m pip install random_cli
+    sudo python3 -m pip install random_cli
 
 from source::
 
