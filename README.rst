@@ -26,16 +26,28 @@ install
 random_cli requires python 3.6 or higher as random_cli uses the new
 secrets module introduced in python 3.6.
 
-you can install random_cli with pip or from source. (or both?)
+you can install random_cli with pip from pypi or from source.
 
 pip::
 
     sudo python3 -m pip install random_cli
 
-from source::
+I use "flit" to build and publish random_cli, so "flit" is required
+if you want to build and install random_cli locally::
 
-    cd /path/to/repo
-    sudo python3 -m pip install .
+    sudo python3 -m pip install flit
+
+then you can build and install random_cli from source::
+
+    git clone https://github.com/sunnz/random-cli.py random_cli
+    cd random_cli
+    flit install
+
+to install system wide, instead of ``flit install``, run::
+
+    sudo su
+    FLIT_ROOT_INSTALL=1 flit install
+    exit
 
 usage
 -----
