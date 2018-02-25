@@ -1,6 +1,10 @@
 random-cli
 ==========
 
+.. image:: https://img.shields.io/pypi/v/random_cli.svg
+   :alt: PyPI
+   :target: https://pypi.org/project/random_cli
+
 a cli app that simply generates a random 64 character alphanumeric string.
 
 I am kind of sick and tired of not being able to generate a simple alphanumeric
