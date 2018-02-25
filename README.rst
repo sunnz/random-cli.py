@@ -20,6 +20,24 @@ of the time.
 so here it is, a purpose built cli app just for generating random alphanumeric
 strings.
 
+security
+--------
+
+- random_cli is entirely hosted on the client machine, no internet connection
+  is ever used after installation.
+
+- randomness is provided by the python secrets module, introduced in python
+  3.6: https://docs.python.org/3.6/library/secrets.html
+
+  - the secrets module uses best source of cryptographic randomness provided
+    by the operating system. on linux, that may be ``/dev/urandom``. they are
+    suitable for managing data such as passwords, account authentication,
+    security tokens, and related secrets.
+
+- **disclaimer**: this project has not been security audited. while secrets
+  module is cryptographically strong, you should do your own assessment if
+  this project is suitable for your specific use case.
+
 install
 -------
 
