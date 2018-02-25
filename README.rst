@@ -28,7 +28,7 @@ secrets module introduced in python 3.6.
 
 you can install random_cli from pypi, or from source.
 
-to install from pypi with pip::
+to install system wide from pypi with pip::
 
     sudo python3 -m pip install random_cli
 
@@ -45,7 +45,7 @@ then you can build and install random_cli from source::
 
 that would install random_cli into your home directory.
 
-to install system wide, instead of ``flit install``, run::
+to install system wide from source, instead of ``flit install``, run::
 
     sudo su
     FLIT_ROOT_INSTALL=1 flit install
@@ -75,7 +75,6 @@ setup virtualenv::
 
     python3 -m venv venv
     source venv/bin/activate
-    python -m pip install --upgrade pip
     python -m pip install -r requirements.txt
 
 from this point we assume that python refers to python 3 in virtualenv.
@@ -90,6 +89,7 @@ install pytest if you haven't installed from requirements.txt from above::
 
 to build command for testing (e.g. within virtualenv)::
 
-    python setup.py develop
+    flit install
 
 after which you can run it by running ``random`` in the terminal in virtualenv.
+to rebuild simply run ``flit install`` again.
