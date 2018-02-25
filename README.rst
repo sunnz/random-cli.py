@@ -68,6 +68,30 @@ command::
 
     random 10
 
+runtime error
+-------------
+
+if you see something like this error::
+
+    Traceback (most recent call last):
+      ...
+    RuntimeError: Click will abort further execution because Python 3 was
+      configured to use ASCII as encoding for the environment.
+      ...
+
+this can be fixed by exporting the locale to the encoding of choice. for
+example, I am using australian english, so I would set my locale to
+``en_AU.utf8`` by running the following::
+
+    export LC_ALL=en_AU.utf8
+    export LANG=en_AU.utf8
+
+the set the locale permanently, this repo provides a script ``locale.sh``
+under ``shell-scripts``. copy it to ``/etc/profile.d/locale.sh``.
+
+see python 3 surrogates for more information:
+http://click.pocoo.org/6/python3/#python3-surrogates
+
 development
 -----------
 
