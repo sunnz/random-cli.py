@@ -2,8 +2,9 @@ random-cli
 ==========
 
 .. image:: https://img.shields.io/pypi/v/random_cli.svg
-   :alt: PyPI
    :target: https://pypi.org/project/random_cli
+.. image:: https://img.shields.io/github/license/sunnz/random-cli.py.svg
+   :alt: isc licence
 
 a cli app that simply generates a random 64 character alphanumeric string.
 
