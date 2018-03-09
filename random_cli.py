@@ -3,7 +3,7 @@
 """
 a cli app that simply generates a random 64 character alphanumeric string.
 """
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 import secrets
 import string

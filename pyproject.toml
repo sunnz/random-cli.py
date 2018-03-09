@@ -12,7 +12,14 @@ requires = [
 ]
 requires-python =  "~=3.6"
 description-file = "README.rst"
-classifiers = ["License :: OSI Approved :: ISC License (ISCL)"]
+classifiers = [
+    "License :: OSI Approved :: ISC License (ISCL)",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+license = "ISC"
 
 [tool.flit.scripts]
 random = "random_cli:random_cli"
