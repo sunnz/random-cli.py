@@ -98,7 +98,7 @@ examples::
     $ random
     6aNaxiFpAtNCYAnyb7LjBCVS9ktQL2QNj1qDYUCvrUDctY4e4DFWMKz23CPmY0Of
 
-    $ random_cli 10
+    $ random 10
     8WsApVMknV
 
     $ random --type print
