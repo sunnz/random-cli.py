@@ -160,11 +160,7 @@ from this point we assume that python refers to python 3 in virtualenv.
 
 to run unit test (via python 3 pytest module)::
 
-    python -m pytest --flake8 -v
-
-install pytest if you haven't installed from requirements.txt from above::
-
-    python -m pip install pytest
+    python -m pytest --flake8 --cache-clear -v
 
 to build command for testing (e.g. within virtualenv)::
 
