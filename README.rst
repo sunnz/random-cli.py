@@ -8,7 +8,12 @@ random-cli
 .. image:: https://img.shields.io/badge/readme%20style-standard-brightgreen.svg
    :target: https://github.com/RichardLitt/standard-readme
 
-a cli app that simply generates a random 64 character alphanumeric string.
+a cli app that simply generates 64 random alphanumeric characters.
+
+for example::
+
+    $ random
+    vBDkKl1JqyeUu4n8ygrF0JflP6odhRnYSaxtND1dUSauNnUj7JDI9DHEYGs9FHhk
 
 I am kind of sick and tired of not being able to generate a simple alphanumeric
 random string for passwords or what not without relying on a web browser.
