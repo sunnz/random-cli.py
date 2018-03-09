@@ -178,6 +178,11 @@ you are very welcomed to open issues and/or submit pull requests on github:
 this project follows standard-readme specification:
 <https://github.com/RichardLitt/standard-readme>.
 
+if you find this project useful and would like to tip me over bitcoin, here's
+my bitcoin tipping address: ``1P1v6k1Qr9Ad3fMLrtgj5PQjYLyZdjqLZP``.
+100% optional, it would totally be an awesome encouragement, no matter what
+the amount is! :)
+
 licence
 -------
 
