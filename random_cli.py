@@ -14,7 +14,7 @@ import click
 @click.option(
     '--type',
     default='alphanumeric',
-    help='type of characters to be generated.')
+    help='alphanumeric (default), print, letters, lower, upper, hex')
 @click.argument('length', required=False, default=64)
 def random_cli(type, length):
     if 'alphanumeric' == type:

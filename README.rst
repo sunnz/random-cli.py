@@ -34,7 +34,7 @@ security
   is ever used after installation.
 
 - randomness is provided by the python secrets module, introduced in python
-  3.6: <https://docs.python.org/3.6/library/secrets.html>
+  3.6: <https://docs.python.org/3.6/library/secrets.html>.
 
   - the secrets module uses best source of cryptographic randomness provided
     by the operating system. on linux, that may be ``/dev/urandom``. they are
@@ -115,7 +115,7 @@ the set the locale permanently, this repo provides a script ``locale.sh``
 under ``shell-scripts``. copy it to ``/etc/profile.d/locale.sh``.
 
 see python 3 surrogates for more information:
-<http://click.pocoo.org/6/python3/#python3-surrogates>
+<http://click.pocoo.org/6/python3/#python3-surrogates>.
 
 development
 -----------
