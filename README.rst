@@ -3,8 +3,10 @@ random-cli
 
 .. image:: https://img.shields.io/pypi/v/random_cli.svg
    :target: https://pypi.org/project/random_cli
+.. image:: https://img.shields.io/badge/python-3.6%2B-blue.svg
 .. image:: https://img.shields.io/github/license/sunnz/random-cli.py.svg
-   :alt: isc licence
+.. image:: https://img.shields.io/badge/readme%20style-standard-brightgreen.svg
+   :target: https://github.com/RichardLitt/standard-readme
 
 a cli app that simply generates a random 64 character alphanumeric string.
 
@@ -32,7 +34,7 @@ security
   is ever used after installation.
 
 - randomness is provided by the python secrets module, introduced in python
-  3.6: https://docs.python.org/3.6/library/secrets.html
+  3.6: <https://docs.python.org/3.6/library/secrets.html>
 
   - the secrets module uses best source of cryptographic randomness provided
     by the operating system. on linux, that may be ``/dev/urandom``. they are
@@ -113,7 +115,7 @@ the set the locale permanently, this repo provides a script ``locale.sh``
 under ``shell-scripts``. copy it to ``/etc/profile.d/locale.sh``.
 
 see python 3 surrogates for more information:
-http://click.pocoo.org/6/python3/#python3-surrogates
+<http://click.pocoo.org/6/python3/#python3-surrogates>
 
 development
 -----------
@@ -140,3 +142,17 @@ to build command for testing (e.g. within virtualenv)::
 
 after which you can run it by running ``random`` in the terminal in virtualenv.
 to rebuild simply run ``flit install`` again.
+
+contribute
+----------
+
+you are very welcomed to open issues and/or submit pull requests on github:
+<https://github.com/sunnz/random-cli.py>.
+
+this project follows standard-readme specification:
+<https://github.com/RichardLitt/standard-readme>.
+
+licence
+-------
+
+isc (c) sunnz <https://github.com/sunnz>.
