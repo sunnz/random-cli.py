@@ -79,19 +79,44 @@ to install system wide from source, instead of ``flit install``, run::
 usage
 -----
 
-example::
+usage: ``random [OPTIONS] [LENGTH]``
 
-    random
+options::
 
-gives you exactly 64 random alphanumeric characters.
+    --type TEXT  alphanumeric (default), print, letters, lower, upper, hex
+    --help       Show this message and exit.
 
-you can specify the number of characters you want by passing a positive integer
-to the command.
+``options`` and ``length`` is optional, default to 64 characters.
 
-for example you can generate 10 characters instead by passing 10 to the
-command::
+examples::
 
-    random 10
+    $ random
+    6aNaxiFpAtNCYAnyb7LjBCVS9ktQL2QNj1qDYUCvrUDctY4e4DFWMKz23CPmY0Of
+
+    $ random_cli 10
+    8WsApVMknV
+
+    $ random --type print
+    0e;:e&%cghH-|/fo4L$tSrn&O'nOavWSfl"\1pW9Q4tO~}-eS2?C4N,PKv/XEX^?
+
+    $ random --type letters
+    UYUgcmuILkxiIsdHDRPOuCcxaOSIHryJHvTHRtOwPRnSqlsTIjTXheSVonhsPpWh
+
+    $ random --type lower
+    quthvsoxiqpipnigvzsjxugmbryczokqffyzmejhibktoitaszhtexgrptodgqnw
+
+    $ random --type upper
+    SAVGDFKDJRRSUFOGQOWYGEBKLPHMQXSSRCVLQHXZCAXRVJYOZERIMCPIINMZWDQK
+
+    $ random --type hex
+    85Bb8BaA8c3fbBcdbF3BAF7a7EeE0E8Aa2D22b87BA0EC315603A6cCaC27dBF9A
+
+random_cli generates 64 random alphanumeric characters by default if no options
+and length are given.
+
+you should not get exactly the same results as above examples as random_cli
+picks random characters from the given options. (you would be extremely lucky
+if you do, as that equates to winning the lotto serveral times in a row!!)
 
 runtime error
 -------------
